@@ -1,0 +1,35 @@
+.map_2 {
+    width: 1390px;
+    height: 500px;
+    background: url("../../images/map.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.svg_bgd {
+    opacity: 0.4;
+    position: absolute;
+    top: 5%;
+    left: 34%;
+}
+
+.svg_path2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.map_2[pos="fixed"] {
+    position: fixed;
+    top: 0;
+}
+
+.map_2[pos="bottom"] {
+    position: absolute;
+    bottom: 0;
+}
+
+.map_wrapper {
+    height: 1000px;
+    position: relative;
+}
