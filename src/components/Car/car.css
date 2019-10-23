@@ -1,0 +1,47 @@
+.car_moving {
+    transform: rotate(90deg);
+    width: 70px;
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    visibility: hidden;
+}
+
+.car_animated {
+    visibility: visible;
+    offset-path: path("M0.5 326L6.5 317L106 144L34 38.5L17 21L9 1");
+    offset-distance: 100%;
+    animation: red-ball 2s linear alternate;
+}
+
+.car_animated_return {
+    animation: red-ball-back 2s linear alternate;
+    offset-distance: 0%;
+    offset-path: path("M0.5 326L6.5 317L106 144L34 38.5L17 21L9 1");
+
+    visibility: visible;
+
+}
+
+@keyframes red-ball {
+    from {
+        offset-distance: 0%;
+    }
+
+    to {
+        offset-distance: 100%;
+        top: 68%;
+        visibility: visible;
+    }
+}
+
+@keyframes red-ball-back {
+    from {
+        offset-distance: 100%;
+    }
+
+    to {
+        offset-distance: 0%;
+
+    }
+}
