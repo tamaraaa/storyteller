@@ -1,0 +1,19 @@
+.path {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 0;
+    stroke: #ff0000;
+    animation: PBdash 4s linear infinite;
+    fill: #ff0000;
+}
+
+@keyframes PBdash {
+    from {
+        stroke-dashoffset: 320;
+        fill: transparent;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        fill: #ff0000;
+    }
+}

@@ -13,12 +13,15 @@
     top: 5%;
     left: 34%;
     visibility: hidden;
-    transition: opacity 1s linear;
+    transition: all 1s linear;
 }
 
 .visable {
+    position: absolute;
+    top: 5%;
+    left: 34%;
     visibility: visible;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 .svg_path2 {
